@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react';
+import Information from './components/information';
+import ScheduleProvider, { ContextSchedule } from './contexts/ContextSchedule';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScheduleProvider>
+      <div className="App">
+        <div className='uk-container'> 
+          <Information />      
+        </div>
+      </div>
+    </ScheduleProvider>    
   );
 }
 
