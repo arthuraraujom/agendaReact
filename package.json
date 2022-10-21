@@ -1,6 +1,7 @@
 {
   "name": "agenda",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@fullcalendar/daygrid": "^5.11.3",
