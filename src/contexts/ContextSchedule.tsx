@@ -48,7 +48,7 @@ const ScheduleProvider = (props: any) =>{
 
     return(
         <ContextSchedule.Provider value={{events, addEvent, removeEvent, updateEvent}}>
-           // {props.children}
+           {props.children}
         </ContextSchedule.Provider>
     );
 
